@@ -1,0 +1,64 @@
+.hero-bottom {
+    display: flex;
+    column-gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include vp-767 {
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    &__button {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        padding: 0;
+        border: none;
+        color: $color-blue-charcoa;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__button--disable {
+        color: $color-mischka;
+    }
+
+    &__icon-list {
+        pointer-events: none;
+
+        @include vp-767 {
+            width: 20px;
+            height: 12px;
+        }
+    }
+
+    &__icon-grid {
+        pointer-events: none;
+
+        @include vp-767 {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__descr {
+        font-size: 18px;
+        line-height: 26px;
+        pointer-events: none;
+
+        @include vp-767 {
+            display: none;
+        }
+    }
+
+    &__button:hover &__descr,
+    &__button:focus &__descr {
+        text-decoration: underline;
+    }
+}

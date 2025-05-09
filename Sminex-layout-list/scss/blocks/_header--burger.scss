@@ -1,0 +1,31 @@
+.header--burger {
+    border-bottom: 1px solid $color-rhino;
+    color: $color-white;
+    background-color: $color-blue-charcoa;
+
+    & .header__menu {
+        margin-right: 90px;
+        width: fit-content;
+    }
+
+    & .header__menu-icon {
+        display: none;
+    }
+
+    & .header__menu-icon-close {
+        display: block;
+        color: $color-white;
+    }
+
+    & .header__logo {
+        color: $color-white;
+    }
+
+    & .header__link {
+        color: $color-white;
+    }
+
+    & .header__phone {
+        color: $color-white;
+    }
+}

@@ -1,0 +1,189 @@
+.burger-menu {
+    display: none;
+
+    .header--burger & {
+        position: absolute;
+        top: 80px;
+        transform: translateX(0);
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+        padding: 40px 50px;
+        width: 100%;
+        min-height: 720px;
+        background-color: $color-blue-charcoa;
+        overscroll-behavior: contain;
+
+        @include vp-1023 {
+            top: 57.8px;
+            align-items: flex-start;
+            padding: 80px 20px;
+            min-height: 620px;
+        }
+
+        @include vp-767 {
+            flex-direction: column;
+            row-gap: 50px;
+            padding: 40px 20px;
+            min-height: 610px;
+        }
+    }
+
+    .header--burger &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 350px);
+        width: calc(100vw - (((100vw - (350px * 3 + 180px)) / 2) * 2));
+        column-gap: calc((100% - (350px * 3)) / 2);
+        margin: 0;
+        padding: 0 24px 0 0;
+        list-style: none;
+
+        @media (max-width: 1174px) {
+            row-gap: 40px;
+        }
+
+        @include vp-1023 {
+            grid-template-columns: repeat(auto-fill, 280px);
+            grid-template-rows: auto auto;
+            grid-auto-flow: column;
+            width: calc(100vw - (((100vw - (280px * 2 + 60px)) / 2) * 2));
+            column-gap: calc((100% - (280px * 2)));
+            row-gap: 80px;
+        }
+
+        @include vp-767 {
+            row-gap: 40px;
+        }
+
+        @media (max-width: 640px) {
+            width: 100%;
+        }
+
+        @media (max-width: 540px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+        }
+
+    }
+
+    .header--burger &__list--list-none &__left-list-content,
+    .header--burger &__list--list-none &__center-list-content,
+    .header--burger &__list--list-none &__right-list-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @include vp-1023 {
+            row-gap: 35px;
+        }
+
+        @include vp-767 {
+            row-gap: 20px;
+        }
+    }
+
+    .header--burger &__link {
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-white-50;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+        }
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        @include vp-767 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    .header--burger &__link--big {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        
+        @include vp-1023 {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+        }
+
+        @include vp-767 {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.3px;
+        }
+    }
+
+    .header--burger &__social-list {
+        position: absolute;
+        right: 50px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @include vp-1023 {
+            right: 20px;
+            row-gap: 50px;
+        }
+    }
+
+    .header--burger &__social-link {
+        color: $color-trout;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+        }
+    }
+
+
+    .header--burger &__choose-btn {
+        display: none;
+
+        @include vp-767 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+            font-family: inherit;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            color: $color-white;
+            background-color: transparent;
+
+            &:hover,
+            &:focus {
+                color: $color-ecru-white;
+            }
+        }
+    }
+
+    .header--burger &__icon-wrapper {
+        position: relative;
+    }
+
+    .header--burger &__icon-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-66%);
+        left: 0;
+    }
+}

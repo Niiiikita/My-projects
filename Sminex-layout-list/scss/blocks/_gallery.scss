@@ -1,0 +1,53 @@
+.gallery {
+    margin-bottom: 60px;
+
+    @include vp-767 {
+        margin-bottom: 35px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @include vp-767 {
+            border-top: 1px solid $color-iron;
+        }
+    }
+
+    &__item {
+        position: relative;
+        border-top: 1px solid $color-iron;
+
+        @include vp-767 {
+            border: none;
+            &:not(:first-child) {
+                border-top: 1px solid $color-iron;
+            }
+        }
+    }
+
+    &__item:nth-child(3) .card__picture,
+    &__item:nth-child(6) .card__picture {
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        &:focus {
+            outline: none;
+        }
+ 
+        &:hover + .card,
+        &:focus + .card {
+            background-color: $color-twilight-blue;
+        }
+    }
+}
