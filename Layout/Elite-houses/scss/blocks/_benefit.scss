@@ -1,0 +1,100 @@
+.benefit {
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  min-height: 480px;
+  padding: 20px;
+  background-size: cover;
+  border: 2px solid $color-white;
+
+  @include vp-1023 {
+    width: 300px;
+    min-height: 400px;
+  }
+
+  @include vp-767 {
+    width: 260px;
+    min-height: 350px;
+    padding: 19px;
+  }
+
+  &--round-all {
+    border-radius: 180px;
+  }
+
+  &--apartment {
+    background-image: image-set("../../images/image-apartment.jpg" 1x, "../../images/image-apartment@2x.jpg" 2x);
+
+    @include vp-1023 {
+      background-image: image-set("../../images/image-apartment-tablet.jpg" 1x, "../../images/image-apartment-tablet@2x.jpg" 2x);
+    }
+
+    @include vp-767 {
+      background-image: image-set("../../images/image-apartment-mobile.jpg" 1x, "../../images/image-apartment-mobile@2x.jpg" 2x);
+    }
+  }
+
+  &--pond {
+    background-image: image-set("../../images/image-pond.jpg" 1x, "../../images/image-pond@2x.jpg" 2x);
+
+    @include vp-1023 {
+      background-image: image-set("../../images/image-pond-tablet.jpg" 1x, "../../images/image-pond-tablet@2x.jpg" 2x);
+    }
+
+    @include vp-767  {
+      background-image: image-set("../../images/image-pond-mobile.jpg" 1x, "../../images/image-pond-mobile@2x.jpg" 2x);
+    }
+  }
+
+  &--entrance {
+    background-image: image-set("../../images/image-view-entrance-building.jpg" 1x, "../../images/image-view-entrance-building@2x.jpg" 2x);
+
+    @include vp-1023 {
+      background-image: image-set("../../images/image-view-entrance-building-tablet.jpg" 1x, "../../images/image-view-entrance-building-tablet@2x.jpg" 2x);
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &__number {
+    margin: 0 0 16px;
+    font-size: 80px;
+    font-family: $ff-ardeco;
+    line-height: 60px;
+
+    @include vp-1023 {
+      margin-bottom: 8px;
+      font-size: 60px;
+    }
+
+    @include vp-767 {
+      font-size: 56px;
+      line-height: 50px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 24px;
+    font-size: 22px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include vp-1023 {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}

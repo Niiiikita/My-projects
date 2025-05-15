@@ -1,0 +1,190 @@
+.courtyard-park {
+    margin-bottom: 120px;
+
+    @include vp-1023 {
+        margin-bottom: 80px;
+    }
+
+    @include vp-767 {
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: minmax(340px, 700px) minmax(340px, 499px);
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+        margin: 0 0 120px;
+        padding: 0;
+        list-style: none;
+
+        @include vp-1023 {
+            column-gap: 49px;
+            margin-bottom: 80px;
+        }
+
+        @include vp-767 {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__title {
+        margin: 0 0 30px;
+        max-width: 440px;
+        font-family: "Tenor Sans";
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: -0.1688rem;
+        text-transform: uppercase;
+        color: $color-fallow;
+        
+        @include vp-1023 {
+            margin-bottom: 20px;
+            max-width: 340px;
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        @include vp-767 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }    
+
+    &__list-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        list-style: none;
+        row-gap: 15px;
+
+        @include vp-1023 {
+            row-gap: 10px;
+        }
+    }
+
+    &__item-2 {
+        display: flex;
+        column-gap: 9px;
+        font-size: 18px;
+        line-height: 26px;
+
+        @include vp-1023 {
+            column-gap: 8px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        
+        &::before {
+            content: "";
+            flex-shrink: 0;
+            margin-top: 10px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $color-fallow;
+        }
+    }
+
+    &__list-3 {
+        display: grid;
+        grid-template-columns: minmax(90px, 500px) minmax(96px, 199px) minmax(90px, 500px);
+        column-gap: 84px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: $color-fallow;
+
+        @include vp-1023 {
+            column-gap: 44px;
+        }
+
+        @include vp-767 {
+            column-gap: 30px;
+        }
+    }
+
+    &__item-3 {
+        position: relative;
+        height: 100%;
+    }
+
+    &__icon-arrow {
+        position: absolute;
+        width: 100%;
+        bottom: 69%;
+        transform: translateY(50%);
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.875rem;
+        padding-right: 15px;
+
+        @include vp-1023 {
+            row-gap: 20px;
+        }
+    }
+
+    &__number {
+        display: flex;
+        align-items: flex-end;
+        column-gap: 20px;
+        margin: 0;
+        font-family: "Tenor Sans";
+        font-weight: 400;
+        font-size: 140px;
+        line-height: 100px;
+        letter-spacing: -5.6px;
+        text-transform: uppercase;
+        
+        @include vp-1023 {
+            align-items: center;
+            font-size: 90px;
+            line-height: 70px;
+            letter-spacing: -3.6px;
+        }
+
+        @include vp-767 {
+            align-items: flex-end;
+            font-size: 70px;
+            line-height: 50px;
+            letter-spacing: -1.6px;
+        }
+
+        span {
+            font-family: "Tenor Sans";
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 44px;
+            text-transform: uppercase;
+            
+            @include vp-1023 {
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: -1.1px;
+            }
+        }
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-white;
+        
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+}

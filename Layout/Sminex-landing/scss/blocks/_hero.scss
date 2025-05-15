@@ -1,0 +1,15 @@
+.hero {
+    margin-bottom: 7.5rem;
+
+    @include vp-1023 {
+        margin-bottom: 5rem;
+    }
+
+    @include vp-767 {
+        margin-bottom: 3.75rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}

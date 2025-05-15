@@ -1,0 +1,135 @@
+.governing-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__picture {
+    height: 580px;
+    position: relative;
+    margin: 0 0 15px;
+
+    @include vp-1023 {
+      margin-bottom: 10px;
+      height: 340px;
+    }
+
+    @include vp-767 {
+      min-height: 291px;
+      height: 100%;
+    }
+
+    @media (max-width: 376px) {
+      min-height: unset;
+      height: 240px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      @media (max-width: 376px) {
+        height: 240px;
+      }
+    }
+  }
+
+  &__icon {
+    background: $color-blue-charcoa;
+    border-radius: 50%;
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    right: 20px;
+    color: $color-white;
+    transition: color .5s;
+
+    @media (max-width: 376px) {
+      bottom: 12px;
+      right: 7px;
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-radius: 50%;
+      background-color: #fff;
+      transform: scale(0);
+      z-index: -1;
+      transition: transform .5s ease;
+    }
+
+    svg {
+       @include vp-1023 {
+         height: 18px;
+         width: 18px;
+       }
+ 
+       @include vp-767 {
+         height: 15px;
+         width: 15px;
+       }
+    }
+
+    @include vp-1023 {
+      height: 48px;
+      width: 48px;
+    }
+
+    @include vp-767 {
+      height: 40px;
+      width: 40px;
+    }
+
+  }
+
+  &__name {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__position {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+
+    @include vp-1023 {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &:hover + .governing-card__icon {
+      color: black;
+      z-index: 1;
+    }
+
+    &:hover + .governing-card__icon::before {
+      transform: scale(1);
+    }
+  }
+}

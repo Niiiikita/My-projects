@@ -1,0 +1,136 @@
+.answer__main-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.answers {
+    padding-bottom: 80px;
+}
+
+.answer-title {
+    color: #fff;
+}
+
+.answer-title::before {
+    content: "1";
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 12px 18px;
+    border-radius: 100px;
+    background-color: #87F29A;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: #000;
+}
+
+.answer-wrapper {
+    display: grid;
+    grid-template-columns: 500px 1fr 500px;
+    gap: 28px 24px;
+}
+
+.card-answer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin: 0;
+    padding: 40px 64px;
+    border: none;
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.card-answer--grid-col-1-3 {
+    grid-column: 1 / 3;
+}
+
+.card-answer--grid-col-2-4 {
+    grid-column: 2 / 4;
+}
+
+.card-answer__title {
+    margin: 0;
+    font-family: "Play";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.card-answer__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.card-answer__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-answer__custom-input {
+    appearance: none;
+}
+
+.card-answer__custom-label {
+    display: flex;
+    column-gap: 18px;
+    font-family: "Play";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    width: fit-content;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.card-answer__custom-label::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}
+
+.card-answer__custom-label--radio::before {
+    border-radius: 50%;
+}
+
+.card-answer__custom-input:checked + .card-answer__custom-label::before {
+    background-image: url("/images/sprite/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(135, 242, 154, 1);
+}
+
+/* Состояние чека */
+.card-answer__custom-input:checked + .card-answer__custom-label {
+    color: #fff;
+}
+
+.card-answer__custom-input:hover + .card-answer__custom-label,
+.card-answer__custom-input:focus + .card-answer__custom-label {
+    color: rgba(135, 242, 154, 1);
+}
+
+.card-answer__custom-input--radio:checked + .card-answer__custom-label::before {
+    background-image: url("/images/sprite/Ellipse.svg");
+}
+
+.answer-svg {
+    position: absolute;
+    bottom: -112px;
+    left: 50%;
+    transform: translateX(-50%);
+}

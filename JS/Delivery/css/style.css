@@ -1,0 +1,250 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'font', sans-serif;
+    background-color: rgb(54, 50, 88);
+    width: 1440px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 1225px;
+    height: 100vh;
+    background-color: rgb(30, 155, 155);
+}
+
+.app {
+    margin-bottom: 20px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    width: 220px;
+    height: 138px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.card:not(:nth-child(4n)) {
+    margin-right: 15px;
+}
+
+.card:not(:nth-last-child(-n + 4)) {
+    margin-bottom: 10px
+}
+
+.card__wrap {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+}
+
+.card__paragraph {
+    margin: 0;
+    font-size: 0.8rem;
+    color: cadetblue;
+}
+
+.card__button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    color: blue;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color .5s, color .5s;
+}
+
+.card__button:hover {
+    color: white;
+    background-color: blue;
+}
+
+.card--delivery {
+    outline: 4px solid red;
+}
+
+.card--canceled {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(0, 0, 0, 0.2);
+    user-select: none;
+}
+
+.popup {
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none;
+}
+
+.popup__box {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 35px;
+
+}
+
+.popup__title {
+    margin: 0 0 25px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.popup__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup__form input,
+.popup__form select {
+    padding: 10px 10px;
+    width: 340px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.popup__form select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.popup__form input:focus,
+.popup__form select:focus {
+    border-color: skyblue;
+    outline: none;
+    background-color: skyblue;
+}
+
+.popup__form input:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.form__button {
+    padding: 15px 60px;
+    border-radius: 15px;
+    width: 100%;
+    height: 3.5em;
+    border: none;
+    background-color: #1c87c9;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.form__button:hover {
+    background-color: #166b9f;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    display: none;
+}
+
+#overlay.show {
+    display: block;
+}
+
+.divTotalDistance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+.buttonTotalDistance {
+    margin-bottom: 10px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #6e0820;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.buttonTotalDistance:hover {
+    background-color: #166b9f;
+}
+
+.closeModal {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	width: 24px;
+	height: 24px;
+	opacity: 0.2;
+	cursor: pointer;
+    background-color: transparent;
+    transition: opacity ease 0.5s;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.closeModal::before,
+.closeModal::after {
+	content: '';
+	position: absolute;
+	top: 9px;
+    right: -2px;
+	display: block;
+	width: 24px;
+	height: 3px;
+	background: #000;
+}
+
+.closeModal::before {
+	transform: rotate(45deg);
+}
+
+.closeModal::after {
+	transform: rotate(-45deg);
+}

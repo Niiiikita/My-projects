@@ -1,0 +1,12 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 194px;
+}
+
+.container--rate {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  align-items: center;
+}/*# sourceMappingURL=container.css.map */

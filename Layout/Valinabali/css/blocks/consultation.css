@@ -1,0 +1,55 @@
+.consultation {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.consultation__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.consultation__wrapper-phone {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+    width: 100%;
+}
+
+.consultation__phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+    margin-bottom: 5px;
+    padding: 16px;
+    border-radius: 60px;
+    color: #fff;
+    background-color: #9E5FC4;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.consultation__phone svg {
+    flex-shrink: 0;
+}
+
+.consultation__descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.consultation__descr--transparent {
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(36, 36, 36, 0.5);
+}
+

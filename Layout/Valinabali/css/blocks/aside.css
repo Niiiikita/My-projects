@@ -1,0 +1,35 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 21px;
+}
+
+.aside-nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 25px;
+    border: 1px solid #E1E1E4;
+    border-radius: 20px;
+}
+
+.aside-nav__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.aside-nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.aside__img {
+    border-radius: 20px;
+}
+
+.aside__button {
+    letter-spacing: 0px;
+}
+

@@ -1,0 +1,98 @@
+.delivery {
+    padding: 80px 0;
+}
+
+.delivery__title::before {
+    content: "3";
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 12px 18px;
+    border-radius: 100px;
+    background-color: #87F29A;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: #000;
+}
+
+.delivery-form {
+    display: grid;
+    grid-template-columns: calc(100% - 40px - 286px) auto;
+    column-gap: 40px;
+}
+
+.delivery-form__input-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.delivery-form__input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+}
+
+.delivery-form__input-box svg,
+.delivery-form__textarea-box svg {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    pointer-events: none;
+}
+
+.delivery-form__input {
+    padding: 16px 16px 16px 52px;
+    width: 100%;
+    height: 56px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.delivery-form__input::placeholder,
+.delivery-form__textarea::placeholder {
+    font-family: "Play";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.delivery-form__textarea-box {
+    position: relative;
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.delivery-form__textarea {
+    padding: 16px 16px 16px 52px;
+    width: 100%;
+    height: 128px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.delivery-form__button {
+    border: none;
+    border-radius: 40px;
+    background-color: rgba(135, 242, 154, 1);
+    font-family: "Press Start 2P";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.delivery-form__button:hover,
+.delivery-form__button:focus {
+    background-color: rgba(120, 223, 138, 1);
+}

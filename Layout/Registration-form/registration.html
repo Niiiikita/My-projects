@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Регистрация - Газпромбанк Бизнес-Онлайн</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <ul class="header__lsit">
+          <li class="header__item">
+            <a href="#" class="header__logo">
+              <svg width="203" height="50">
+                <use xlink:href="images/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__item">
+            <div class="header__raiting">
+              <div class="header__raiting-box">
+                <p class="header__raiting-descr">
+                  Топ-3 лучших банков для корпоративных клиентов
+                </p>
+                <p class="header__raiting-version">
+                  По&nbsp;версии Markswebb
+                </p>
+              </div>
+              <svg width="56" height="56">
+                <use xlink:href="images/sprite.svg#icon-header"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="registration">
+        <div class="container">
+          <div class="registration__wrapper">
+            <div class="registration__box">
+              <form action="#" method="post" id="form" class="registration-form">
+                <div class="registration-form__wrapper">
+                  <h2 class="registration-form__title">
+                    Регистрация
+                  </h2>
+                  <ul class="registration-form__list">
+                    <li class="registration-form__item">
+                      <div class="registration-form__input-box">
+                          <input type="text" name="surname" id="surname" class="registration-form__input" aria-label="Форма для ввода фамилии" required>
+                          <label for="surname" class="registration-form__label">Фамилия</label>
+                          <span class="registration-form__error">Поле обязательно для заполнения</span>
+                        </div>
+                    </li>
+                    <li class="registration-form__item">
+                      <div class="registration-form__wrapper-name">
+                        <div class="registration-form__input-box">
+                            <input type="text" name="name" id="name" class="registration-form__input" aria-label="Форма для ввода имени" required>
+                            <label for="name" class="registration-form__label">Имя</label>
+                            <span class="registration-form__error">Укажите имя</span>
+                          </div>
+                          <div class="registration-form__input-box">
+                            <input type="text" name="lastname" id="lastname" class="registration-form__input" aria-label="Форма для ввода отчества">
+                            <label for="lastname" class="registration-form__label">Отчество</label>
+                          </div>
+                      </div>
+                    </li>
+                    <li class="registration-form__item">
+                      <div class="registration-form__input-box">
+                          <input type="text" name="login" id="login" class="registration-form__input" aria-label="Форма для ввода логина" required>
+                          <label for="login" class="registration-form__label">Логин</label>
+                          <span class="registration-form__error">Поле обязательно для заполнения</span>
+                        </div>
+                    </li>
+                    <li class="registration-form__item">
+                      <div class="registration-form__input-box">
+                          <input type="password" name="password" id="password" class="registration-form__input" aria-label="Форма для ввода пароля" required>
+                          <label for="password" class="registration-form__label">Пароль</label>
+                          <span class="registration-form__error">Поле обязательно для заполнения</span>
+                        </div>
+                    </li>
+                    <li class="registration-form__item">
+                      <div class="registration-form__input-box">
+                          <input type="tel" name="tel" id="tel" class="registration-form__input" aria-label="Форма для ввода телефона" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" required>
+                          <label for="tel" class="registration-form__label">Телефон</label>
+                          <span class="registration-form__error">Поле обязательно для заполнения</span>
+                        </div>
+                    </li>
+                    <li class="registration-form__item">
+                      <div class="registration-form__input-box">
+                          <input type="email" name="email" id="email" class="registration-form__input" aria-label="Форма для ввода email" required>
+                          <label for="email" class="registration-form__label">Email</label>
+                          <span class="registration-form__error">Поле обязательно для заполнения</span>
+                        </div>
+                    </li>
+                    <li class="registration-form__item">
+                      <div class="registration-form__capcha">
+                        <div class="registration-form__capcha-label">
+                          Код с&nbsp;картинки
+                          <button type="button" class="registration-form__capcha-button">
+                            <svg width="16" height="16">
+                              <use xlink:href="images/sprite.svg#icon-reload"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="registration-form__input-capcha">
+                          <input type="text" name="capcha" id="capcha" class="registration-form__input" required>
+                          <span class="registration-form__error">Поле обязательно для заполнения</span>
+                          <div class="registration-form__capcha-img-box">
+                            <img src="images/capcha.png" alt="Capcha">
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <button type="submit" class="button registration-form__button">
+                  Продолжить
+                </button>
+                <input type="checkbox" name="personal-data" id="personal-data" class="registration-form__input-checkbox visually-hidden" required>
+                <label for="personal-data" class="registration-form__label-checkbox">
+                  Согласен на&nbsp;обработку и&nbsp;передачу <a href="#">персональных данных</a>
+                </label>
+              </form>
+              <a href="login.html" class="registration__link">
+                Войти в&nbsp;ГПБ Бизнес-онлайн
+              </a>
+            </div>
+            <aside class="aside">
+              <h2 class="aside__title">
+                ГПБ Бизнес ID&nbsp; — один для всех
+              </h2>
+              <ul class="aside__list">
+                <li class="aside__item">
+                  <svg width="40" height="40">
+                    <use xlink:href="images/sprite.svg#icon-list-1"></use>
+                  </svg>
+                  <p class="aside__descr">
+                    Единая учетная запись для работы с&nbsp;продуктами и сервисами, предоставляемыми группой Банк ГПБ (АО) и&nbsp;партнёрами
+                  </p>
+                </li>
+                <li class="aside__item">
+                  <svg width="40" height="40">
+                    <use xlink:href="images/sprite.svg#icon-list-2"></use>
+                  </svg>
+                  <p class="aside__descr">
+                    Возможность одновременной работы с&nbsp;несколькими продуктами без необходимости переходить из&nbsp;одной системы в&nbsp;другую
+                  </p>
+                </li>
+                <li class="aside__item">
+                  <svg width="40" height="40">
+                    <use xlink:href="images/sprite.svg#icon-list-3"></use>
+                  </svg>
+                  <p class="aside__descr">
+                    Гарантия защиты Ваших персональных данных
+                  </p>
+                </li>
+              </ul>
+
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="tel:88001001189" class="footer__link">
+                <svg width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-phone"></use>
+                </svg>
+                <span>8 800 100 11 89</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <svg width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-tg"></use>
+                </svg>
+                <span>
+                  Написать в&nbsp;Telegram
+                </span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <span class="footer__copyright">
+                &copy;&nbsp;2024 Банк ГПБ (АО) Генеральная лицензия Банка России &#8470;&nbsp;354
+              </span>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__copyright footer__copyright--link">
+                Политика обработки персональных данных
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="footer__button" aria-label="Кнопка переключения темы">
+            <span>
+              Светлая тема
+            </span>
+            <svg width="20" height="20">
+              <use xlink:href="images/sprite.svg#icon-theme"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

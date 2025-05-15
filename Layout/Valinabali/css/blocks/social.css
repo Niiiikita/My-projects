@@ -1,0 +1,9 @@
+.social {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+}
+
+.social__link {
+  display: flex;
+}

@@ -1,0 +1,39 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    max-width: 500px;
+}
+
+.aside__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1E222E;    
+}
+
+.aside__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.aside__item {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+}
+
+.aside__item svg {
+    flex-shrink: 0;
+}
+
+.aside__descr {
+    margin: 0;
+    line-height: 21px;
+    color: #1E222E;
+}

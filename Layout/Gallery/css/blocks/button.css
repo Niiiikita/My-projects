@@ -1,0 +1,17 @@
+.button {
+    padding: 14px;
+    color: #9E5FC4;
+    border: 1px solid #9E5FC4;
+    border-radius: 60px;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 128.57%;
+    cursor: pointer;
+}
+
+.button--fill {
+    border: none;
+    color: #fff;
+    line-height: 130.57%;
+    background-color: #9E5FC4;
+}

@@ -1,0 +1,131 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.625rem 2.375rem;
+    height: 100%;
+    border: .0625rem solid $color-fallow;
+    border-bottom: none;
+    border-radius: 37.5rem 37.5rem 0 0;
+
+    @include vp-1023 {
+        padding: 2.375rem .8125rem;
+    }
+
+    @include vp-767 {
+        padding: 1.5625rem .625rem;
+    }
+
+    &__icon-arms {
+        color: $color-fallow;
+        margin-bottom: 1.875rem;
+
+        @include vp-1023 {
+            margin-bottom: 1.25rem;
+            width: 4.375rem;
+            height: 5.875rem;
+        }
+
+        @include vp-767 {
+            width: 3.75rem;
+            height: 5rem;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__descr {
+        margin: 0 0 .625rem;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        letter-spacing: .225rem;
+        text-transform: uppercase;
+        text-align: center;
+        color: $color-fallow;
+        
+        @include vp-1023 {
+            margin: 0 0 .3125rem;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            letter-spacing: .175rem;
+        }
+
+        @include vp-767 {
+            margin: 0 0 .625rem;
+            font-size: .625rem;
+            line-height: 14px;
+            letter-spacing: .125rem;
+        }
+    }
+
+    &__title {
+        margin: 0 0 2.5rem;
+        font-family: "Tenor Sans";
+        font-weight: 400;
+        font-size: 2.75rem;
+        line-height: 3.125rem;
+        letter-spacing: -0.2188rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media (max-width: 1335px) {
+            font-size: 1.875rem;
+            line-height: 2.1875rem;
+
+        }
+
+        @include vp-1023 {
+            margin: 0 0 1.25rem;
+            font-size: 1.75rem;
+            line-height: 2rem;
+            letter-spacing: -2.2px;
+
+        }
+
+        @include vp-767 {
+            margin: 0 0 .9375rem;
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+            letter-spacing: -1.9px;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__icon-geo {
+        margin-bottom: .9375rem;
+        color: $color-fallow;
+
+        @include vp-1023 {
+            margin-bottom: .625rem;
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        @include vp-767 {
+            margin-bottom: .3125rem;
+        }
+    }
+
+    &__address {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        text-align: center;
+
+        @include vp-1023 {
+            font-size: .875rem;
+            line-height: 1.25rem;
+        }
+    }
+}

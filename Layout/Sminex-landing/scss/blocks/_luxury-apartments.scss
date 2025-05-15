@@ -1,0 +1,208 @@
+.luxury-apartments {
+    margin-bottom: 120px;
+
+    @include vp-1023 {
+        margin-bottom: 80px;
+    }
+
+    @include vp-767 {
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: minmax(340px, 485px) minmax(440px, 800px);
+        justify-content: space-between;
+        align-items: center;
+        // gap: 85px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @include vp-1023 {
+            grid-template-columns: minmax(320px, 460px);
+            justify-content: center;
+            gap: 40px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include vp-1023 {
+            align-items: center;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-bottom: 40px;
+
+        @include vp-1023 {
+            row-gap: 20px;
+            margin-bottom: 20px;
+        }
+    
+        @include vp-767 {
+            row-gap: 15px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-family: "Tenor Sans";
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: -2.7px;
+        text-transform: uppercase;
+        color: $color-fallow;
+
+        @include vp-1023 {
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: -1.9px;
+            text-align: center;
+        }
+    
+        @include vp-767 {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -1.6px;
+        }
+    }
+
+    &__descr {
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 17px;
+        width: 220px;
+        min-height: 60px;
+        border: 1px solid $color-fallow;
+        border-bottom-left-radius: 40px;
+        border-top-right-radius: 40px;
+        color: $color-fallow;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+
+        &:hover,
+        &:focus {
+            outline: none;
+            background-color: $color-fallow;
+            color: $color-rustic-red;
+        }
+
+        @include vp-1023 {
+            margin: 0 auto;
+            padding: 15px;
+            width: 180px;
+            min-height: 50px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__list-apartments {
+        display: grid;
+        grid-template-columns: minmax(60px, 400px) minmax(60px, 400px);
+        padding: 0;
+        list-style: none;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+        padding: 50px;
+        height: 100%;
+        border: 1px solid $color-fallow;
+        border-top-right-radius: 600px;
+        border-top-left-radius: 600px;
+        border-bottom: none;
+        color: $color-fallow;
+
+        @include vp-1023 {
+            row-gap: 20px;
+        }
+    
+        @include vp-767 {
+            row-gap: 40px;
+            padding: 30px;
+        }
+    }
+
+    &__number {
+        margin: 0;
+        font-family: "Tenor Sans";
+        font-weight: 400;
+        font-size: 140px;
+        line-height: 100px;
+        letter-spacing: -5.6px;
+        text-align: center;
+        text-transform: uppercase;
+        
+        @include vp-1023 {
+            font-size: 90px;
+            line-height: 70px;
+            letter-spacing: -3.6px;
+        }
+    
+        @include vp-767 {
+            font-size: 70px;
+            line-height: 50px;
+            letter-spacing: -2.8px;
+        }
+    }
+
+    &__number-options {
+        margin: 0;
+        max-width: 260px;
+        font-family: "Tenor Sans";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: -1.6px;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: -1.1px;
+        }
+    
+        @include vp-767 {
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -1px;
+        }
+        
+    }
+
+    &__img {
+        border-bottom-left-radius: 600px;
+        border-bottom-right-radius: 600px;
+    }
+}

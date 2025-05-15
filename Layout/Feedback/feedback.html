@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Обратная связь - БЕСIT</title>
+  </head>
+  <body>
+    <main>
+      <!-- Обратная связь -->
+      <section class="feedback">
+        <div class="container feedback__container">
+          <div class="feedback__content">
+            <h1 class="feedback__title">
+              бес<span>it</span>
+            </h1>
+            <form action="#" method="post" class="feedback__form">
+              <label class="feedback__label" for="message">
+                Поделись болью, вопросом или расскажи миру о&nbsp;том, кто из&nbsp;коллег съел твой йогурт
+              </label>
+              <div class="feedback__custom-input">
+                <button type="submit" class="feedback__button" aria-label="Кнопка отправки сообщения">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite/sprite.svg#message-icon" />
+                  </svg>
+                </button>
+                <input type="text" name="message" id="message" class="feedback__message" placeholder="Твоё сообщение ..." aria-label="Поле для отправки сообщения">
+              </div>
+            </form>
+          </div>
+          <ul class="feedback__list">
+            <li class="feedback__item feedback__wrapper-message--bubble-1">
+              <div class="feedback__wrapper-message ">
+                <p class="feedback__content-message">
+                  Я&nbsp;всю жизнь хотел в&nbsp;IT и у меня получилось. Но&nbsp;теперь я хочу с&nbsp;кем-то об&nbsp;этом поговорить...
+                </p>
+                <img src="images/demon.png" alt="Демонический смайлик" class="feedback__emotion-1">
+              </div>
+            </li>
+            <li class="feedback__item feedback__wrapper-message--bubble-2">
+              <div class="feedback__wrapper-message ">
+                <p class="feedback__content-message">
+                  Для тестировщиков есть отдельный котёл в&nbsp;аду, я&nbsp;проверяла
+                </p>
+                <svg width="32" height="40">
+                  <use xlink:href="images/sprite/sprite.svg#custom-svg-5"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="feedback__item feedback__wrapper-message--bubble-3">
+              <div class="feedback__wrapper-message ">
+                <p class="feedback__content-message">
+                  Что делать, если я&nbsp;хочу быть котиком, но&nbsp;надо идти и&nbsp;писать код?
+                </p>
+                <svg width="32" height="40">
+                  <use xlink:href="images/sprite/sprite.svg#custom-svg-4"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="feedback__item feedback__wrapper-message--bubble-4">
+              <div class="feedback__wrapper-message ">
+                <p class="feedback__content-message">
+                  Как&nbsp;же бесит Safari и&nbsp;его бесконечные баги с&nbsp;анимациями
+                </p>
+                <svg width="32" height="40">
+                  <use xlink:href="images/sprite/sprite.svg#custom-svg-3"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="feedback__item feedback__wrapper-message--bubble-5">
+              <div class="feedback__wrapper-message ">
+                <p class="feedback__content-message">
+                  У&nbsp;меня так много рабочих созвонов, что может показаться, что я&nbsp;зарабатываю не&nbsp;разработкой, а&nbsp;вебкамом
+                </p>
+                <img src="images/angry.png" alt="Злой смайлик" class="feedback__emotion-2">
+              </div>
+            </li>
+            <li class="feedback__item feedback__wrapper-message--bubble-6">
+              <div class="feedback__wrapper-message ">
+                <p class="feedback__content-message">
+                  4&nbsp;часа искать ошибку в&nbsp;коде, а&nbsp;в&nbsp;итоге найти неправильно написанное слово &laquo;heigth&raquo;
+                </p>
+                <svg width="32" height="40">
+                  <use xlink:href="images/sprite/sprite.svg#custom-svg-2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="feedback__item feedback__wrapper-message--bubble-7">
+              <div class="feedback__wrapper-message ">
+                <p class="feedback__content-message">
+                  Бесит когда дизайнеры в&nbsp;10&nbsp;раз правят отступы, после того как я&nbsp;закончил править&nbsp;ПП
+                </p>
+                <svg width="32" height="40">
+                  <use xlink:href="images/sprite/sprite.svg#custom-svg-1"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Подвал сайта -->
+     <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__left-box">
+          <a href="#" class="footer__logo">
+            <img src="images/logo.svg" height="24" width="120" alt="Логотип компании БЕСИТ">
+          </a>
+          <div class="footer__copyright-box">
+            <svg width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite/sprite.svg#copy-icon" />
+            </svg>
+            <span class="footer__copyright">
+              Все права защищены и&nbsp;принадлежат народу
+            </span>
+          </div>
+        </div>
+        <form action="#" method="post" class="footer__form">
+          <label class="footer__label" for="email">
+            Читай подборку по&nbsp;дороге на&nbsp;работу или&nbsp;за&nbsp;чашкой кофе
+          </label>
+          <div class="footer__input-box">
+            <div class="footer__custom-box">
+              <svg width="20" height="20" aria-hidden="true">
+                <use xlink:href="images/sprite/sprite.svg#email-icon" />
+              </svg>
+              <input type="email" name="email" id="email" class="footer__email" placeholder="Электронная почта" required aria-label="Поле для для подписки на рассылку">
+            </div>
+            <button type="submit" class="footer__button" aria-label="Кнопка для оформления подписки">Подписаться</button>
+          </div>
+        </form>
+      </div>
+     </footer>
+  </body>
+</html>

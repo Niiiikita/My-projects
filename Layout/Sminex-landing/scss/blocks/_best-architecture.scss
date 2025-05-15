@@ -1,0 +1,85 @@
+.best-architecture {
+    margin-bottom: 120px;
+
+    @include vp-1023 {
+        margin-bottom: 80px;
+    }
+
+    @include vp-767 {
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @include vp-1023 {
+            row-gap: 20px;
+        }
+    
+        @include vp-767 {
+            row-gap: 40px;
+        }
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        color: $color-fallow;
+
+        @include vp-767 {
+            flex-direction: column;
+            row-gap: 15px;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        max-width: 400px;
+        font-family: "Tenor Sans";
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: -0.1688rem;
+        text-transform: uppercase;
+
+        @include vp-1023 {
+            max-width: 230px;
+            font-size: 24px;
+            line-height: 30px;
+        }
+    
+        @include vp-767 {
+            max-width: 295px;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+
+    &__descr {
+        margin: 0;
+        max-width: 398px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-white;
+
+        @include vp-1023 {
+            max-width: 230px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        @include vp-767 {
+            max-width: 295px;
+            text-align: center;
+        }
+    }
+}

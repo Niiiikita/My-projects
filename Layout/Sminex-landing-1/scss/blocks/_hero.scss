@@ -1,0 +1,212 @@
+.hero {
+  padding: 80px 0 0;
+  margin: 0 0 80px;
+
+  @include vp-1023 {
+    margin: 0 0 50px;
+    padding: 50px 0 0;
+  }
+
+  @include vp-767 {
+    margin: 0 0 30px;
+    padding: 40px 0 0;
+  }
+
+  &__heading {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 0 80px;
+
+    @media (max-width:1505px) {
+      margin-bottom: 40px;
+    }
+
+    @include vp-1023 {
+      margin-bottom: 50px;
+    }
+
+    @include vp-767 {
+      flex-wrap: wrap;
+      gap: 13px;
+      margin: 0;
+    }
+  }
+
+  &__title {
+    font-size: 86px;
+    line-height: 90px;
+    letter-spacing: 0.02em;
+    font-weight: 200;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+
+    @media (max-width: 1628px) {
+      font-size: 56px;
+    }
+
+    @media (max-width: 1216px) {
+      font-size: 40px;
+      margin-bottom: 0;
+    }
+
+    @include vp-1023 {
+      font-size: 44px;
+      line-height: 50px;
+      margin-bottom: 15px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 36px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__description {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+
+    @include vp-1023 {
+      max-width: 440px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      max-width: 335px;
+      font-size: 14px;
+      line-height: 20px;
+      
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 27px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    padding: 13px 0;
+
+    @media (max-width: 1628px) {
+      font-size: 15px;
+    }
+
+    @include vp-1023 {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.3px;
+    }
+
+    @include vp-767 {
+      gap: 9px;
+    }
+
+    &-text {
+      flex-shrink: 0;
+    }
+  }
+
+  &__button-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__button-icon::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 0;
+    width: 64px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color .5s;
+  }
+
+  &__button-subtrack {
+    height: 64px;
+    width: 53px;
+
+    @include vp-1023 {
+      height: 33px;
+      width: 40px;
+    }
+  }
+
+  &__button-arrow {
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 16px;
+    transition: transform .5s;
+
+    @include vp-1023 {
+      width: 15px;
+      height: 13px;
+      left: 0;
+    }
+  }
+
+  &__button:hover &__button-arrow,
+  &__button:focus &__button-arrow {
+    color: $color-white;
+    transform: translate(60%, -50%);
+  }
+
+  &__button:hover &__button-icon::before,
+  &__button:focus &__button-icon::before {
+    background-color: $color-blue-charcoa;
+  }
+
+  &__link-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 1505px) {
+      gap: 40px;
+    }
+
+    @media (max-width: 796px) {
+      gap: 30px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &__link {
+    display: flex;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0 10px 20px;
+    border-bottom: 2px solid $color-black;
+
+    &:hover,
+    &:focus {
+      color: #A7A8AA;
+    }
+
+    @include vp-1023 {
+      padding: 0 5px 10px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    column-gap: 10px;
+    padding: 23px 20px;
+    border-radius: 20px;
+    background-color: #F6EEFB;
+    height: 100%;
+}
+
+.card svg {
+    flex-shrink: 0;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.card__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.card__descr {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(36, 36, 36, 0.5);
+}

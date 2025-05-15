@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Проблема с входом - Газпромбанк Бизнес-Онлайн</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <ul class="header__lsit">
+          <li class="header__item">
+            <a href="#" class="header__logo">
+              <svg width="203" height="50">
+                <use xlink:href="images/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__item">
+            <div class="header__raiting">
+              <div class="header__raiting-box">
+                <p class="header__raiting-descr">
+                  Топ-3 лучших банков для корпоративных клиентов
+                </p>
+                <p class="header__raiting-version">
+                  По&nbsp;версии Markswebb
+                </p>
+              </div>
+              <svg width="56" height="56">
+                <use xlink:href="images/sprite.svg#icon-header"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="forgot">
+        <div class="container">
+          <h1 class="visually-hidden">
+            Восстановление пароля
+          </h1>
+          <div class="forgot__wrapper">
+            <h2 class="forgot__title">
+              Не&nbsp;можете войти?
+            </h2>
+            <form action="#" method="post" class="forgot__form" id="forgot__form">
+              <ul class="forgot__list">
+                <li class="forgot__item">
+                  <input type="radio" name="password" id="new-password" value="new-password" class="forgot__radio visually-hidden" aria-label="Кнопка для установки нового пароля" required>
+                  <label for="new-password" class="forgot__label">Установить новый пароль</label>
+                </li>
+                <li class="forgot__item">
+                  <input type="radio" name="password" id="recover-password" value="recover-password" class="forgot__radio visually-hidden" aria-label="Кнопка для восстановления пароля" required>
+                  <label for="recover-password" class="forgot__label">Восстановить логин</label>
+                </li>
+              </ul>
+              <button type="submit" class="button forgot__button" aria-label="Кнопка для подтверждения выбора">Продолжить</button>
+            </form>
+            <a href="login.html" class="forgot__button-login" aria-label="Кнопка для возвращения ко входу на сайт">
+              <svg width="20" height="20">
+                <use xlink:href="images/sprite.svg#icon-back"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="tel:88001001189" class="footer__link">
+                <svg width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-phone"></use>
+                </svg>
+                <span>8 800 100 11 89</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <svg width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-tg"></use>
+                </svg>
+                <span>
+                  Написать в&nbsp;Telegram
+                </span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <span class="footer__copyright">
+                &copy;&nbsp;2024 Банк ГПБ (АО) Генеральная лицензия Банка России &#8470;&nbsp;354
+              </span>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__copyright footer__copyright--link">
+                Политика обработки персональных данных
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="footer__button" aria-label="Кнопка переключения темы">
+            <span>
+              Светлая тема
+            </span>
+            <svg width="20" height="20">
+              <use xlink:href="images/sprite.svg#icon-theme"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,308 @@
+.rate {
+    margin-bottom: 100px;
+    padding-top: 42px;
+}
+
+.main-title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.main-title span {
+    color: #259DD6;
+}
+
+.rate__list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-flow: column;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rate-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 32px 24px;
+    max-width: 340px;
+    height: 100%;
+    border: 1px solid #E2E4E8;
+    border-radius: 28px;
+    background-color: #fff;
+}
+
+.rate-card__title {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 11px;
+    margin: 0 0 29px 0;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 0.4px;
+}
+
+.rate__item--bestseller .rate-card__title::after {
+    content: "Хит продаж";
+    padding: 6px 13px;
+    border-radius: 60px;
+    background: linear-gradient(90deg, #537CCB 0%, #9648BD 100%);
+    color: #fff;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 114.9%;
+    letter-spacing: -0.3px;
+    
+}
+
+.rate-card__lits-conditions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 48px;
+    margin: 0 0 23px 0;
+    padding: 0 4px 0 4px;
+    list-style: none;
+}
+
+.rate-card__item-conditions {
+    position: relative;
+    width: 100%;
+}
+
+.rate-card__item-conditions:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -25px;
+    width: 2px;
+    min-height: 34px;
+    background-color: #999899;
+}
+
+.rate-card__box-conditions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;
+    max-width: 59px;
+}
+
+.rate-card__number-conditions {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;    
+}
+
+.rate-card__word-conditions {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.rate-card__list-options {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin: 0 0 28px 0;
+    padding: 0 75px 0 0;
+    list-style: none;
+}
+
+.rate-card__wrapper-options {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.rate-card__item-options svg {
+    flex-shrink: 0;
+}
+
+.rate-card__descr-options {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.rate-card__link-options {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 114.9%;
+    color: #259DD6;
+}
+
+.rate-card__link-options:hover,
+.rate-card__link-options:focus {
+    outline: none;
+    color: #9D1881;
+}
+
+.rate-card__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 19px;
+}
+
+.rate-card__price-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rate-card__price-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 12px 45px 16px 16px;
+}
+
+.rate-card__price-item--first-card .rate-card__price-card{
+    row-gap: 6px;
+}
+
+.rate-card__price-radio-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #E2E4E8;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.rate-card__price-radio-label::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #259DD6;
+}
+
+.rate-card__price-radio:checked + .rate-card__price-radio-label::before {
+    background-color: #259DD6;
+    background-image: url("/images/sprite/icon-check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rate-card__price-radio-label:hover,
+.rate-card__price-radio:focus + .rate-card__price-radio-label {
+    outline: none;
+    border-color: #259DD6;
+}
+
+.rate-card__price-radio:checked + .rate-card__price-radio-label {
+    border-color: #259DD6;
+}
+
+.rate-card__price-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;   
+}
+
+.rate-card__price-mounth {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.rate-card__price-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.rate-card__price-descr,
+.rate-card__price-saving span {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.rate-card__price-descr span,
+.rate-card__price-bank-card {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.rate-card__price-bank-card {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.rate-card__price-saving {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.rate-card__button-form {
+    padding: 18px 58px;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: -0.2px;
+}
+
+.rate__item--mod-1 .rate-card__button-form {
+    background: linear-gradient(270deg, #537CCB 0%, #13AED7 100%);
+}
+
+.rate__item--mod-1 .rate-card__button-form:hover,
+.rate__item--mod-1 .rate-card__button-form:focus {
+    background: #537CCB;
+    outline: none;
+}
+
+.rate__item--mod-2 .rate-card__button-form {
+    background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
+}
+
+.rate__item--mod-2 .rate-card__button-form:hover,
+.rate__item--mod-2 .rate-card__button-form:focus {
+    background: #9548BD;
+    outline: none;
+}
+
+.rate__item--mod-3 .rate-card__button-form {
+    background: linear-gradient(270deg, #D812AE 0%, #9548BD 100%);
+}
+
+.rate__item--mod-3 .rate-card__button-form:hover,
+.rate__item--mod-3 .rate-card__button-form:focus {
+    background: #D812AE;
+    outline: none;
+}
