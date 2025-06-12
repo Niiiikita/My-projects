@@ -1,0 +1,43 @@
+.custom-input {
+  position: relative;
+  $root: &;
+
+  &__field {
+    border: 1px solid transparent;
+    background-color: rgba($color-jaguar, .05);
+    border-radius: 200px;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 15px 20px;
+    width: 100%;
+    outline: none;
+    transition: background-color $transition-300;
+
+    &::placeholder {
+      color: rgba($color-jaguar, 0.3);
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-silver;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    display: none;
+    bottom: -20px;
+    left: 20px;
+    width: 100%;
+    color: $color-red;
+
+    @include vp-1023 {
+      bottom: -17px;
+      font-size: 10px;
+    }
+  }
+
+  &__field:user-invalid + &__error {
+    display: block;
+  }
+}

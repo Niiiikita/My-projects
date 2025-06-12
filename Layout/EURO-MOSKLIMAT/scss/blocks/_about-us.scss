@@ -1,0 +1,47 @@
+.about-us {
+    margin-bottom: 124px;
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 32px;
+        line-height: 121%;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &-descr {
+            margin: 0;
+            max-width: 1182px;
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            text-align: center;
+            color: $color-boulder;
+        }
+    }
+
+    &__button {
+        padding: 16px;
+        border: none;
+        border-radius: 10px;
+        min-width: 207px;        
+        color: $color-white;
+        background-color: $color-cadmium-red;
+        font-family: inherit;
+        font-size: 16px;
+        line-height: 100%;
+        cursor: pointer;
+    }
+}

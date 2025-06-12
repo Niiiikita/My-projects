@@ -1,0 +1,25 @@
+// Colors
+
+$color-black: #000000;
+$color-zeus: #231F20;
+$color-white: #ffffff;
+$color-cadmium-red: #DC092E;
+$color-pale-blue-lily: #D3EAFF;
+$color-desert-storm: #F7F7F7;
+$color-light-grey: #D9D9D9;
+$color-butterfly-blue: #38AAFC;
+$color-bright-sky-blue: #29C8FF;
+$color-boulder: #787878;
+
+$color-white-50: rgba($color-white, .5);
+$color-bright-sky-blu-25: rgba($color-bright-sky-blue, .25);
+
+// Typography
+$ff-norms: "SegoeUI", "Arial", sans-serif;
+
+// Viewport
+$vp-tablet: 1023px;
+$vp-mobile: 767px;
+
+// Animation
+$transition-300: ease-in 0.3s;

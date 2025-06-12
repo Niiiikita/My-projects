@@ -1,0 +1,43 @@
+.header-bottom {
+    padding: 8px 0;
+    
+    .container {
+        display: grid;
+        grid-template-columns: minmax(100px ,137px) 1fr;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0 40px;
+    }
+
+    &__button {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        color: $color-butterfly-blue;
+        border-color: $color-bright-sky-blu-25;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 36px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__descr {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 100%;
+        color: $color-boulder;
+    }
+
+}

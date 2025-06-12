@@ -1,0 +1,72 @@
+.climate-control {
+    margin-bottom: 96px;
+
+    &__title {
+        margin: 0 0 44px 0;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 100%;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(162px, 416px));
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    // &__list {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     gap: 24px;
+    //     margin: 0;
+    //     padding: 0;
+    //     list-style: none;
+    // }
+
+    // &__item {
+    //     width: calc((100% - 48px) / 3) ;
+    // }
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 24px;
+        width: 100%;
+        min-height: 191px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background-color: $color-desert-storm;
+
+        &-title {
+            position: relative;
+            margin: 0;
+            max-width: 257px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 120%;
+        }
+
+        &-link {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-underline-offset: 3px;
+            color: $color-boulder;
+        }
+
+        &-img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+    }
+}

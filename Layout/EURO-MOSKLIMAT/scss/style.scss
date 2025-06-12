@@ -1,0 +1,30 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize.scss";
+@import "global/_variables";
+@import "global/_mixins";
+@import "global/_fonts";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/_button";
+@import "blocks/_additional-information";
+@import "blocks/_header";
+@import "blocks/_header-bottom";
+@import "blocks/_offers";
+@import "blocks/_climate-control";
+@import "blocks/_card";
+@import "blocks/_stock";
+@import "blocks/_advantages";
+@import "blocks/_about-us";
+@import "blocks/_brend";
+@import "blocks/_popular-offer";
+@import "blocks/_choice";
+@import "blocks/_form";
+@import "blocks/_sold";
+@import "blocks/_news";
+@import "blocks/_footer";

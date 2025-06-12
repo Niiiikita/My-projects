@@ -1,0 +1,59 @@
+.stock {
+    position: relative;
+    margin-bottom: 48px;
+
+    &__img-bg {
+        position: absolute;
+        bottom: -150px;
+        left: 0;
+        width: 100%;
+        mix-blend-mode: hard-light;
+        z-index: -1;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 41px;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+    }
+
+    &__link {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-underline-offset: 3px;
+        color: $color-zeus;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(164px, 306px));
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    // &__list {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     gap: 24px;
+    //     margin: 0;
+    //     padding: 0;
+    //     list-style: none;
+    // }
+
+    // &__item {
+    //     width: calc((100% - 72px) / 4);
+    // }
+}

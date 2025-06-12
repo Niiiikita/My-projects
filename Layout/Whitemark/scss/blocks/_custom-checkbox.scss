@@ -1,0 +1,64 @@
+.custom-checkbox {
+  position: relative;
+  $root: &;
+
+  &__field {
+    top: 15px;
+    left: 7px;
+  }
+
+  &__field:checked + #{$root}__label::after {
+    display: block;
+  }
+
+  &__error {
+    position: absolute;
+    display: none;
+    bottom: -20px;
+    left: 20px;
+    width: 100%;
+    color: $color-red;
+
+    @include vp-1023 {
+      bottom: -17px;
+      font-size: 10px;
+    }
+  }
+
+  &__field:user-invalid + &__label + &__error {
+    display: block;
+  }
+
+  &__label {
+    position: relative;
+    padding: 0 0 0 19px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba($color-jaguar, 0.3);
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      height: 12px;
+      width: 12px;
+      border: 1px solid $color-jaguar;
+      display: flex;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      content: "";
+      height: 8px;
+      width: 8px;
+      background-color: $color-jaguar;
+      position: absolute;
+      top: 50%;
+      left: 2px;
+      transform: translateY(-50%);
+      display: none;
+    }
+  }
+}

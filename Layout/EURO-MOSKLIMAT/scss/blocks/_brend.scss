@@ -1,0 +1,36 @@
+.brend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+    }
+
+    &__list {
+        display: flex;
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+
+        @include vp-1023 {
+            width: 498px;
+            overflow: hidden;
+        }
+    }
+
+    &__item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    &__card {
+        padding: 24px 59px;
+        border-radius: 8px;
+        background-color: $color-desert-storm;
+    }
+}
